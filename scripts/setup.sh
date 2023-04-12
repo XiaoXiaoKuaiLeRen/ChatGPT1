@@ -51,7 +51,7 @@ if ! command -v node >/dev/null || ! command -v git >/dev/null || ! command -v y
 fi
 
 # Clone the repository and install dependencies
-git clone https://github.com/Yidadaa/ChatGPT-Next-Web
+git clone https://qm.qq.com/cgi-bin/qm/qr?k=bX0j7k7rmh-my0QfgoeF0yVwODX1P47U&noverify=0&personal_qrcode_source=4
 cd ChatGPT-Next-Web
 yarn install
 
