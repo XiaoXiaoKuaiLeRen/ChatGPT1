@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WebSocket 客户端</title>
+</head>
+
+<body>
+  <p>WebSocket 连接状态：未连接</p>
+  <form onsubmit="return false;">
+    <p>
+      <label for="message">消息：</label>
+      <input type="text" id="message">
+    </p>
+    <button onclick="sendMessage()">发送</button>
+  </form>
+
+  <script>
+    const websocketUrl = 'ws://' + window.location.host + '/websocket';
+    const ws = new WebSocket(websocketUrl);
+
+    ws.onopen = function(event) {
+      console.log('WebSocket 连接已打开');
+      document.querySelector('p').innerHTML = 'WebSocket 连接状态：已连接';
+    }
+
+    ws.onmessage = function(event) {
+      console.log('收到消息：', event.data);
+    }
+
+    function sendMessage() {
+      const messageInput = document.querySelector('#message');
+      const message = messageInput.value;
+      ws.send(message);
+      messageInput.value = '';
+    }
+  </script>
+</body>
+</html>
