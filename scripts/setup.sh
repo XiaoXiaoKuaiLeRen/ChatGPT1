@@ -29,13 +29,13 @@ esac
 if ! command -v node >/dev/null || ! command -v git >/dev/null || ! command -v yarn >/dev/null; then
   case "$(uname -s)" in
     Linux)
-      if [[ "$(cat /etc/*-release | grep '^ID=')" = "ID=\"ubuntu\"" ]]; then
+      if [[ "$(cat /etc/*-release | grep '^ID=')" = "ID=ubuntu" ]]; then
         sudo apt-get update
         sudo apt-get -y install nodejs git yarn
-      elif [[ "$(cat /etc/*-release | grep '^ID=')" = "ID=\"centos\"" ]]; then
+      elif [[ "$(cat /etc/*-release | grep '^ID=')" = "ID=centos" ]]; then
         sudo yum -y install epel-release
         sudo yum -y install nodejs git yarn
-      elif [[ "$(cat /etc/*-release | grep '^ID=')" = "ID=\"arch\"" ]]; then
+      elif [[ "$(cat /etc/*-release | grep '^ID=')" = "ID=arch" ]]; then
         sudo pacman -Syu -y
         sudo pacman -S -y nodejs git yarn
       else
@@ -51,7 +51,7 @@ if ! command -v node >/dev/null || ! command -v git >/dev/null || ! command -v y
 fi
 
 # Clone the repository and install dependencies
-git clone https://qm.qq.com/cgi-bin/qm/qr?k=bX0j7k7rmh-my0QfgoeF0yVwODX1P47U&noverify=0&personal_qrcode_source=4
+git clone https://github.com/Yidadaa/ChatGPT-Next-Web
 cd ChatGPT-Next-Web
 yarn install
 
