@@ -3,7 +3,7 @@ import { SubmitKey } from "../store/config";
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: "现在是未授权状态，请在公众号KKGPT666获取今日授权码。",
+    Unauthorized: "现在是未授权状态，请在公众号KKGPT666回复授权码获取今日授权码。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
