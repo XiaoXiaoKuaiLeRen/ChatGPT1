@@ -164,7 +164,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "需要联系我在左下角设置旁按钮 VX",
+    BotHello: "需要联系我的在左下角设置旁边按钮",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
