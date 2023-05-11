@@ -4,11 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "现在是未授权状态，请前往公众号: **[KKGPT666](https://mp.weixin.qq.com/s?__biz=Mzg5Mjk3MjkxOQ==&mid=2247483712&idx=1&sn=d684af01c8842cdc9b56e8e4e1ea2650&chksm=c034bb58f743324e512c46e50e8f9ba05da6efba41a127b07897deb51c2bbfc4fe7c2d702964#rd)** 回复**密码**获取访问密码，访问密码不定时更换防止滥用。并点击左下角[设置](/#/settings)按钮输入访问密码。",
-      "**提问：** 能免费使用GPT-4吗?":
-      "**回答：** 太贵了，一次对话就一块钱，日常用3.5足够了，你实在需要就公众号或者QQ群联系我吧",
-      "欢迎来聊聊**[QQ群](点击链接加入群聊[KK GPT](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bnl6ZEtL58-h_P4WGM3-GR2dceKPUsOc&authKey=w5jMO3altJNH3b%2FfQND5jOrsHXdVliu9m6R9q3S3cw%2Fr7dV6q0evIeTq6sJUH8pU&noverify=0&group_code=811797219)**":
-      "网站地址要更换了，请注意收藏**[新地址](http://xiaokya.com)**",
+    "现在是未授权状态，请前往公众号: **[KKGPT666](https://mp.weixin.qq.com/s?__biz=Mzg5Mjk3MjkxOQ==&mid=2247483712&idx=1&sn=d684af01c8842cdc9b56e8e4e1ea2650&chksm=c034bb58f743324e512c46e50e8f9ba05da6efba41a127b07897deb51c2bbfc4fe7c2d702964#rd)** 回复**密码**获取访问密码，访问密码不定时更换防止滥用。并点击左下角[设置](/#/settings)按钮输入访问密码.\n**提问：** 能免费使用GPT-4吗?.\n **回答：** 太贵了，一次对话就一块钱，日常用3.5足够了，你实在需要就公众号或者QQ群联系我吧.\n欢迎来聊聊**[QQ群](点击链接加入群聊[KK GPT](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bnl6ZEtL58-h_P4WGM3-GR2dceKPUsOc&authKey=w5jMO3altJNH3b%2FfQND5jOrsHXdVliu9m6R9q3S3cw%2Fr7dV6q0evIeTq6sJUH8pU&noverify=0&group_code=811797219)**;.\n网站地址要更换了，请注意收藏**[新地址](http://xiaokya.com)**",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
