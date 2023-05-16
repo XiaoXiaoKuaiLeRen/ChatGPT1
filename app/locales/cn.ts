@@ -171,7 +171,6 @@ const cn = {
   Store: {
     DefaultTopic: "新的聊天",
     BotHello: "需要联系我直接加 **[QQ群811797219](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=a2KHewLu332rcA7DW_f8w97a4ZUqHaXB&authKey=M86%2FxHcfYF%2BIpb4JiriEbWfvWPPgbAx3PQS%2FAN0sjdMKnqJUVG9OX2AxiQ8jj0G9&noverify=0&group_code=811797219)** .\n **群里偶尔会发一些GPT黑号** ",
-    BotHello: "有什么可以帮你的吗",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
