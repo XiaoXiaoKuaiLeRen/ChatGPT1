@@ -4,7 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-    "现在是未授权状态，请前往公众号: **[KKGPT666](https://mp.weixin.qq.com/s?__biz=Mzg5Mjk3MjkxOQ==&mid=2247483712&idx=1&sn=d684af01c8842cdc9b56e8e4e1ea2650&chksm=c034bb58f743324e512c46e50e8f9ba05da6efba41a127b07897deb51c2bbfc4fe7c2d702964#rd)** 回复 **密码** 获取访问密码，访问密码不定时更换防止滥用。并点击左下角 **[设置](/#/settings)** 按钮输入访问密码.\n**提问：** 能免费使用GPT-4吗?.\n **回答：** 太贵了，一次对话就一块钱，日常用3.5足够了，你实在需要就公众号或者QQ群联系我吧.\n欢迎来聊聊,访问密码更新会直接在群里发出来 **[QQ群：811797219](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bnl6ZEtL58-h_P4WGM3-GR2dceKPUsOc&authKey=w5jMO3altJNH3b%2FfQND5jOrsHXdVliu9m6R9q3S3cw%2Fr7dV6q0evIeTq6sJUH8pU&noverify=0&group_code=811797219)** .\n网站地址要更换了，请注意收藏 **[新地址](http://xiaokya.com)** . \n **蓝色字体都是可以点的** ",
+      "现在是未授权状态，请前往公众号: **[KKGPT666](https://mp.weixin.qq.com/s?__biz=Mzg5Mjk3MjkxOQ==&mid=2247483712&idx=1&sn=d684af01c8842cdc9b56e8e4e1ea2650&chksm=c034bb58f743324e512c46e50e8f9ba05da6efba41a127b07897deb51c2bbfc4fe7c2d702964#rd)** 回复 **密码** 获取访问密码，访问密码不定时更换防止滥用。并点击左下角 **[设置](/#/settings)** 按钮输入访问密码.\n**提问：** 能免费使用GPT-4吗?.\n **回答：** 太贵了，一次对话就一块钱，日常用3.5足够了，你实在需要就公众号或者QQ群联系我吧.\n欢迎来聊聊,访问密码更新会直接在群里发出来 **[QQ群：811797219](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=bnl6ZEtL58-h_P4WGM3-GR2dceKPUsOc&authKey=w5jMO3altJNH3b%2FfQND5jOrsHXdVliu9m6R9q3S3cw%2Fr7dV6q0evIeTq6sJUH8pU&noverify=0&group_code=811797219)** .\n **群里偶尔会发一些GPT黑号** .\n网站地址要更换了，请注意收藏 **[新地址](http://xiaokya.com)** . \n **可对接Midjourney接口，需要可联系因为那玩意花钱** .\n **蓝色字体都是可以点的** ",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -67,7 +67,7 @@ const cn = {
       ConfirmClearAll: "确认清除所有数据？",
     },
     Lang: {
-      Name: "Language",
+      Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
       All: "所有语言",
       Options: {
         cn: "简体中文",
@@ -78,6 +78,9 @@ const cn = {
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
+        vi: "Tiếng Việt",
+        ru: "Русский",
+        cs: "Čeština",
       },
     },
     Avatar: "头像",
@@ -116,8 +119,11 @@ const cn = {
       Edit: "编辑",
       Modal: {
         Title: "提示词列表",
-        Add: "增加一条",
+        Add: "新建",
         Search: "搜索提示词",
+      },
+      EditModal: {
+        Title: "编辑提示词",
       },
     },
     HistoryCount: {
@@ -145,7 +151,7 @@ const cn = {
     },
     AccessCode: {
       Title: "访问密码",
-      SubTitle: "已开启加密访问",
+      SubTitle: "管理员已开启加密访问",
       Placeholder: "请输入访问密码",
     },
     Model: "模型 (model)",
@@ -157,14 +163,15 @@ const cn = {
       Title: "单次回复限制 (max_tokens)",
       SubTitle: "单次交互所用的最大 Token 数",
     },
-    PresencePenlty: {
+    PresencePenalty: {
       Title: "话题新鲜度 (presence_penalty)",
       SubTitle: "值越大，越有可能扩展到新话题",
     },
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "需要联系我直接加 **[QQ群811797219](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=a2KHewLu332rcA7DW_f8w97a4ZUqHaXB&authKey=M86%2FxHcfYF%2BIpb4JiriEbWfvWPPgbAx3PQS%2FAN0sjdMKnqJUVG9OX2AxiQ8jj0G9&noverify=0&group_code=811797219)** ",
+    BotHello: "需要联系我直接加 **[QQ群811797219](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=a2KHewLu332rcA7DW_f8w97a4ZUqHaXB&authKey=M86%2FxHcfYF%2BIpb4JiriEbWfvWPPgbAx3PQS%2FAN0sjdMKnqJUVG9OX2AxiQ8jj0G9&noverify=0&group_code=811797219)** .\n **群里偶尔会发一些GPT黑号** ",
+    BotHello: "有什么可以帮你的吗",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
@@ -221,7 +228,15 @@ const cn = {
     ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
     Title: "挑选一个面具",
     SubTitle: "现在开始，与面具背后的灵魂思维碰撞",
-    More: "搜索更多",
+    More: "查看全部",
+  },
+
+  UI: {
+    Confirm: "确认",
+    Cancel: "取消",
+    Close: "关闭",
+    Create: "新建",
+    Edit: "编辑",
   },
 };
 
